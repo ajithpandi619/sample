@@ -1,0 +1,359 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+.logo_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+ 
+ .logo-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ } 
+
+ .nav-links ul{
+    display: flex;
+    list-style: none;
+ }
+
+ .nav-links ul a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 35px;
+ }
+
+ .nav-links ul a li:hover{
+    background-color: rgb(255, 2, 2);
+    color: rgb(255, 255, 255);
+ }
+
+ .btn
+ {
+     position: absolute;
+     top: 8px;
+     right: 16px;
+     width: 25px;
+     height: 15px;
+     display:none;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ 
+ .bar
+ {
+     height:3px;
+     width: 100%;
+     background-color: rgb(0, 0, 0);
+ }
+ 
+ @media(max-width:600px)
+ {
+  .btn
+ {
+     display: flex;   
+ }
+ .nav-links
+ {
+    display: none;
+    width: 100%;
+    margin-top: 5px;
+ }
+
+ .nav-links ul
+ {
+     flex-direction: column;
+     width: 100%;
+    
+ }
+  .nav-links ul li
+ {
+      
+     background-color: rgb(248, 248, 248);
+     text-align: center;
+ }
+ 
+ .nav-links.active
+ {
+     display: flex; 
+ }
+ 
+ }
+ .second_box{
+    width: 100%;
+    height: 400px;
+    background-color: azure;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+ }
+
+ .nested_box img{
+    width: 30%;
+    height:40vh;
+    border: 1px solid black;
+    position: absolute;
+    left: 65%;
+    top: 50px;
+ }
+
+ .second_box .frondend_Box h1{
+   color: red;
+   margin-bottom: 15px;
+ }
+
+ .frondend_Box p{
+   margin-left: 50px;
+   font-size: 16px;
+ }
+ 
+.three_buttons{
+   display: flex;
+}
+
+ .btns{
+   margin-top: 80px;
+   margin-left: 40px;
+   margin-bottom: 10px;
+   padding: 20px;
+   width: 200px;
+   font-size: large;
+   font-weight: bold;
+   color: red;
+   background-color: black;
+ }
+
+ .btns:hover{
+   background-color: aliceblue;
+   color: rgb(0, 0, 0);
+   width: 250px;
+   border: 1px dotted black;
+ }
+
+ @media (max-width:600px) {
+   .btns{
+      width: 100px;
+   }
+ }
+ 
+ .Eight_boxes .box{
+   width: 300px;
+   height: 300px;
+   border: 1px solid rgb(255, 255, 255);
+   
+   margin: 15px;
+   color: white;
+   font-weight: bolder;
+   font-size: 54px;
+ }
+
+ .Eight_boxes .box img{
+  width: 300px;
+  height: 300px;
+ }
+ .Eight_boxes{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap:wrap;
+ }
+
+ .Eight_boxes .box_Head .box_topic{
+ margin-left: 100px;
+ font-size: 18px;
+ font-weight: bold;
+ color: rgb(255, 47, 0);
+ background-color: rgb(0, 0, 0);  
+ width: 180px;
+ border-radius: 10px;
+ padding: 10px;
+ padding-left: 20px;
+ }
+
+ .person_profiles .profiles{
+   display: flex;
+   justify-content: center;
+ }
+ .person_profiles .profiles h4{
+   display: flex;
+   justify-content: center;
+   background-color: azure;
+   border-radius: 8px;
+   height: 20px;
+   padding-top: 2px;
+ }
+
+ .person_profiles .profiles h5{
+   display: flex;
+   justify-content: center;
+   background-color: beige;
+   border-radius: 8px;
+   height: 20px;
+   padding-top: 5px;
+   
+ }
+
+ .person_profiles ul li{
+   margin: 80px;
+   list-style: none;
+   
+ }
+
+ .person_profiles ul li img{
+   border-radius: 50%;
+   background: blur(5px);
+ }
+
+ .subscribe_txt h3{
+  color: red;
+  margin-left: 500px;
+  margin-top: 40px;
+  background-color: aquamarine;
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+ }
+ .subscribe_txt{display: flex;}
+ .subscribe_txt button{
+width: 100px;
+height: 40px;
+background-color: #e32a2a;
+color: wheat;
+font-weight: bold;
+font-size: 24px;
+border: none;
+border-radius: 10px;
+margin-top: 42px;
+margin-left: 20px;
+ }
+ .bottom_container{
+   width: 100%;
+   height: 400px;
+   background-color: black;
+   background-attachment: fixed;
+   position: relative;
+ }
+
+ .grey_box{
+  position: absolute;
+  width: 50%;
+  height: 100px;
+  background-color: rgb(217, 217, 217);
+  left: 25%;
+  top: -40px;
+ }
+
+ .grey_box #fLine{
+  color: #d50606;
+  font-size: 16px;
+  margin-bottom: 10px;
+ }
+ .grey_box #sLine::first-letter{
+  color: red;
+  font-size: "xx-large";
+ }
+
+ .grey_box #sLine{
+  font-size: 24px;
+  margin-left: 30px;
+ }
+ .grey_box .contact_btn{
+  position: absolute;
+  left: 600px;
+  bottom: 35px;
+  width: 100px;
+  height: 35px;
+  padding: 6px;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: #e32a2a;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+ }
+
+ .grey_box .contact_btn:hover{
+  background: none;
+  color: black;
+  border: 1px solid black;
+ }
+ 
+ .copyright_content div h2{
+  font-size: 20px;
+  color: aliceblue;
+  margin-top: 100px;
+ }
+
+ .copyright_content {
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+ .copyright_content ul a li{
+  color: rgb(96, 85, 85);
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+ }
+ .copyright_content ul a li:hover{
+  color: red;
+ }
+
+
+ .copyright_content .btm_contents .cdix{
+  color:  rgb(96, 85, 85);
+ }
+
+ .copyright_content .btm_contents .cdix:hover{
+  color:#d50606;
+ }
+ .copyright_content .btm_contents .btm_links{
+ margin-top: 20px;
+  
+ }
+
+ .copyright_content .btm_contents .btm_links .subscribe{
+  color: rgb(217, 211, 211);
+  
+ }
+ .copyright_content .btm_contents input{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 35px;
+  width: 250px;
+  background-color: rgb(184, 193, 200);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+ }
+
+ .copyright_content .btm_contents .subscribe_btn button{
+  background-color: #d50606;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  font-size:medium;
+  font-weight: bolder;
+  color: white;
+ }
+
+ .copys{
+  margin-left: 150px;
+  margin-top: 80px;
+  display: flex;
+ }
+
+ .icon{
+  background-color: aliceblue;
+ }
